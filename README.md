@@ -16,11 +16,17 @@ The data set consists of 50 samples from each of three species of Iris (Iris set
 3. Petal Length 
 4. Petal Width 
 
-Based on the combination of these four features the species of the flower is being determined. We have taken the IRIS data set from Kaggle and added the same to github repository. The dataset is accessed directly within Azure from github using Azure's TabularDatasetFactory
+Based on the combination of these four features the species of the flower is being determined. We have taken the IRIS data set from Kaggle and added the same to github repository. 
+The dataset is accessed directly within Azure from github using Azure's TabularDatasetFactory
 
 
 ### Task
-The project focuses on building a Classification Model. First we are training the Model using Hyperdrive and AutoML. Then we deploy the best model which is being chosen based upon the Primary Metric - Accuracy score.
+The project focuses on building a Classification Model. 
+First we are training the Model using Hyperdrive and AutoML. 
+Then we deploy the best model as a webservice which is being chosen based upon the Primary Metric - Accuracy score.
+Finally we would test the Prediction capability of the model by calling the Webservice. 
+Additionally we have enabled Application insight to view the detailed logs related to the requests being sent to the web app.
+
 
 ### Access
 The dataset is accessed directly from github using Azure's TabularDatasetFactory
