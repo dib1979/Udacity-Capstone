@@ -4,8 +4,8 @@ The Iris flower data set or Fisher's Iris data set is a multivariate data set in
 The Project is using the same dataset to train a ML model using Hyperdrive and AutoML runs, then deploy the best model as a Webservice in terms of Accuracy which has been chosen as the Primary metric. Finally we would test the Prediction capability of the model by calling the Webservice. 
 Additionally we have enabled Application insight to view the detailed logs related to the requests being sent to the web app.
 
-## Project Set Up and Installation
-*OPTIONAL:* If your project has any special installation steps, this is where you should put it. To turn this project into a professional portfolio project, you are encouraged to explain how to set up this project in AzureML.
+## Project Set Up and Installation - Architecture
+<img src="Capstone/pic15.PNG">
 
 ## Dataset
 
