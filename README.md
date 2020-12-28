@@ -82,8 +82,11 @@ a) "--kernel": choice('linear', 'rbf', 'poly', 'sigmoid') - If we’re having a 
 
 b) "--penalty": choice(0.5, 1, 1.5) - It tells the algorithm how much we care about misclassified points.  
 2. primary_metric_name='Accuracy - Each training run is evaluated for the primary metric. The early termination policy uses the primary metric to identify low-performance runs. 
+
 3. primary_metric_goal - It can be either PrimaryMetricGoal.MAXIMIZE or PrimaryMetricGoal.MINIMIZE and determines whether the primary metric will be maximized or minimized when evaluating the runs. 
+
 4. max_concurrent_runs=4 - Maximum number of runs that can run concurrently. If not specified, all runs launch in parallel. If specified, must be an integer between 1 and 100. 
+
 5. Specify early termination policy -Automatically terminate poorly performing runs with an early termination policy. Early termination improves computational efficiency. 
 
 *TODO*: What kind of model did you choose for this experiment and why? Give an overview of the types of parameters and their ranges used for the hyperparameter search
