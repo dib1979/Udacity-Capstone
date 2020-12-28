@@ -69,7 +69,7 @@ We have achieved maximum accuracy through VotingEnsemble = 0.9905.
 ## Hyperparameter Tuning
 The machine learning model I have chosen to go along with hyperdrive is Support Vector Machine (SVM). 
 Linear models have linear decision boundaries (intersecting hyperplanes) while the non-linear kernel models (polynomial or Gaussian RBF) have more flexible non-linear decision boundaries with shapes that depend on the kind of kernel and its parameters. 
-In addition to performing linear classification, SVMs can efficiently perform a non-linear classification using what is called the kernel trick, implicitly mapping their inputs into high-dimensional feature spaces.
+In addition to performing linear classification, SVMs can efficiently perform a non-linear classification using what is called the kernel trick, implicitly mapping their inputs into high-dimensional feature spaces. 
 
 # PARAMETERS
 1. RandomParameterSampling - Random sampling supports discrete and continuous hyperparameters. It supports early termination of low-performance runs. 
