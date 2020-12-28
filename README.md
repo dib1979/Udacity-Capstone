@@ -21,11 +21,11 @@ The dataset is accessed directly within Azure from github using Azure's TabularD
 
 
 ### Task
-The project focuses on building a Classification Model. 
-First we are training the Model using Hyperdrive and AutoML. 
-Then we deploy the best model as a webservice which is being chosen based upon the Primary Metric - Accuracy score.
-Finally we would test the Prediction capability of the model by calling the Webservice. 
-Additionally we have enabled Application insight to view the detailed logs related to the requests being sent to the web app.
+The project focuses on building a Classification Model.  
+First we are training the Model using Hyperdrive and AutoML.  
+Then we deploy the best model as a webservice which is being chosen based upon the Primary Metric - Accuracy score. 
+Finally we would test the Prediction capability of the model by calling the Webservice.  
+Additionally we have enabled Application insight to view the detailed logs related to the requests being sent to the web app. 
 
 
 ### Access
@@ -34,7 +34,13 @@ The dataset is accessed directly from github using Azure's TabularDatasetFactory
 <img src="Capstone/pic1.PNG">
 
 ## Automated ML
-*TODO*: Give an overview of the `automl` settings and configuration you used for this experiment
+### AutoML Settings
+1. "enable_early_stopping" : True - Whether to enable early termination if the score is not improving in the short term. The default is False. 
+2. "iteration_timeout_minutes": 5 - Maximum time in minutes that each iteration can run for before it terminates. If not specified, a value of 1 month or 43200 minutes is used. 
+3. "max_concurrent_iterations": 4 - Represents the maximum number of iterations that would be executed in parallel. The default value is 1. 
+4. "max_cores_per_iteration": -1 - The maximum number of threads to use for a given training iteration.   
+5. "featurization": 'auto' - FeaturizationConfig Indicator for whether featurization step should be done automatically or not, or whether customized featurization should be used 
+6. "verbosity": logging.INFO - The verbosity level for writing to the log file. The default is INFO or 20. 
 
 ### Results
 *TODO*: What are the results you got with your automated ML model? What were the parameters of the model? How could you have improved it?
