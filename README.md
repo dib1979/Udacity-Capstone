@@ -50,21 +50,21 @@ The dataset is accessed directly from github using Azure's TabularDatasetFactory
 
 
 ### Results
-# AUTOML RUNDETAILS WIDGET & DIFFERENT MODELS GENERATED 
+### AUTOML RUNDETAILS WIDGET & DIFFERENT MODELS GENERATED 
 <img src="Capstone/pic2.PNG">
 
 <img src="Capstone/pic3.PNG">
 
-# BEST TRAINED MODEL - VOTINGENSEMBLE - ACCURACY = 0.9905
+### BEST TRAINED MODEL - VOTINGENSEMBLE - ACCURACY = 0.9905
 
 <img src="Capstone/pic4.PNG">
 
 <img src="Capstone/pic5.PNG">
 
 ### IMPROVEMENT OPPORTUNITIES
-We have achieved maximum accuracy through VotingEnsemble = 0.9905. 
-In AutoML run we can use the allowed_models or blocked_models parameters to further, modify iterations with the available models to include or exclude 
-For classification, we can also enable deep learning. If deep learning is enabled, validation is limited to train_validation split.
+We have achieved maximum accuracy through VotingEnsemble = 0.9905.  
+1. In AutoML run we can use the allowed_models or blocked_models parameters to further, modify iterations with the available models to include or exclude 
+2. For classification, we can also enable deep learning. If deep learning is enabled, validation is limited to train_validation split.
 
 ## Hyperparameter Tuning
 The machine learning model I have chosen to go along with hyperdrive is Support Vector Machine (SVM). 
