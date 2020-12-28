@@ -67,9 +67,9 @@ We have achieved maximum accuracy through VotingEnsemble = 0.9905.
 2. For classification, we can also enable deep learning. If deep learning is enabled, validation is limited to train_validation split.
 
 ## Hyperparameter Tuning
-The machine learning model I have chosen to go along with hyperdrive is Support Vector Machine (SVM). 
-Linear models have linear decision boundaries (intersecting hyperplanes) while the non-linear kernel models (polynomial or Gaussian RBF) have more flexible non-linear decision boundaries with shapes that depend on the kind of kernel and its parameters. 
-In addition to performing linear classification, SVMs can efficiently perform a non-linear classification using what is called the kernel trick, implicitly mapping their inputs into high-dimensional feature spaces. 
+1. The machine learning model I have chosen to go along with hyperdrive is Support Vector Machine (SVM). 
+2. Linear models have linear decision boundaries (intersecting hyperplanes) while the non-linear kernel models (polynomial or Gaussian RBF) have more flexible non-linear decision boundaries with shapes that depend on the kind of kernel and its parameters. 
+3. In addition to performing linear classification, SVMs can efficiently perform a non-linear classification using what is called the kernel trick, implicitly mapping their inputs into high-dimensional feature spaces. 
 
 # PARAMETERS
 1. RandomParameterSampling - Random sampling supports discrete and continuous hyperparameters. It supports early termination of low-performance runs. 
@@ -80,8 +80,8 @@ a) "--kernel": choice('linear', 'rbf', 'poly', 'sigmoid') - If we’re having a 
 #### Polynomial Kernel - The polynomial kernel allows us to learn patterns in our data as if we had access to the interaction features, which are the features that come from combining pre-existing features
 #### Sigmoid Kernel - SVM model using a sigmoid kernel function is equivalent to a two-layer, perceptron neural network.
 
-b) "--penalty": choice(0.5, 1, 1.5) - It tells the algorithm how much we care about misclassified points.
-2. primary_metric_name='Accuracy - Each training run is evaluated for the primary metric. The early termination policy uses the primary metric to identify low-performance runs. 
+b) "--penalty": choice(0.5, 1, 1.5) - It tells the algorithm how much we care about misclassified points.  
+2. primary_metric_name='Accuracy - Each training run is evaluated for the primary metric. The early termination policy uses the primary metric to identify low-performance runs.
 3. primary_metric_goal - It can be either PrimaryMetricGoal.MAXIMIZE or PrimaryMetricGoal.MINIMIZE and determines whether the primary metric will be maximized or minimized when evaluating the runs. 
 4. max_concurrent_runs=4 - Maximum number of runs that can run concurrently. If not specified, all runs launch in parallel. If specified, must be an integer between 1 and 100. 
 5. Specify early termination policy -Automatically terminate poorly performing runs with an early termination policy. Early termination improves computational efficiency. 
