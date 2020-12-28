@@ -23,8 +23,8 @@ The dataset is accessed directly within Azure from github using Azure's TabularD
 ### Task
 The project focuses on building a Classification Model.  
 First we are training the Model using Hyperdrive and AutoML.  
-Then we deploy the best model as a webservice which is being chosen based upon the Primary Metric - Accuracy score. 
-Finally we would test the Prediction capability of the model by calling the Webservice.  
+Then we deploy the best model as a webservice which is being chosen based upon the Primary Metric - Accuracy score.  
+Finally we would test the Prediction capability of the model by calling the Webservice. 
 Additionally we have enabled Application insight to view the detailed logs related to the requests being sent to the web app. 
 
 
@@ -41,6 +41,13 @@ The dataset is accessed directly from github using Azure's TabularDatasetFactory
 4. "max_cores_per_iteration": -1 - The maximum number of threads to use for a given training iteration.   
 5. "featurization": 'auto' - FeaturizationConfig Indicator for whether featurization step should be done automatically or not, or whether customized featurization should be used 
 6. "verbosity": logging.INFO - The verbosity level for writing to the log file. The default is INFO or 20. 
+
+### AutoML Configurations
+1. experiment_timeout_minutes=30 - Maximum amount of time in minutes that all iterations combined can take before the experiment terminates. 
+2. primary_metric - The metric that Automated Machine Learning will optimize for model selection 
+3. n_cross_validations=3 - How many cross validations to perform when user validation data is not specified. 
+4. debug_log = "automl_errors.log" - The log file to write debug information to. If not specified, 'automl.log' is used. 
+
 
 ### Results
 *TODO*: What are the results you got with your automated ML model? What were the parameters of the model? How could you have improved it?
