@@ -1,7 +1,7 @@
 # Project Title -  Predicting IRIS Flower Species                                                                                                       
 
-The Iris flower data set or Fisher's Iris data set is a multivariate data set introduced by the British statistician, eugenicist, and biologist Ronald Fisher. The data set consists of 50 samples from each of three species of Iris (Iris setosa, Iris virginica and Iris versicolor). Four features were measured from each sample: the length and the width of the sepals and petals, in centimeters. Based on the combination of these four features, Fisher developed a linear discriminant model to distinguish the species from each other. 
-The Project is using the same dataset to train a ML model using Hyperdrive and AutoML runs, then deploy the best model as a Webservice in terms of Accuracy which has been chosen as the Primary metric. Finally we would test the Prediction capability of the model by calling the Webservice.
+The Iris flower data set or Fisher's Iris data set is a multivariate data set introduced by the British statistician, eugenicist, and biologist Ronald Fisher. The data set consists of 50 samples from each of three species of Iris (Iris setosa, Iris virginica and Iris versicolor). Four features were measured from each sample: the length and the width of the sepals and petals, in centimeters. Based on the combination of these four features, Fisher developed a linear discriminant model to distinguish the species from each other.  
+The Project is using the same dataset to train a ML model using Hyperdrive and AutoML runs, then deploy the best model as a Webservice in terms of Accuracy which has been chosen as the Primary metric. Finally we would test the Prediction capability of the model by calling the Webservice. 
 Additionally we have enabled Application insight to view the detailed logs related to the requests being sent to the web app.
 
 ## Project Set Up and Installation
@@ -11,11 +11,11 @@ Additionally we have enabled Application insight to view the detailed logs relat
 
 ### Overview
 The data set consists of 50 samples from each of three species of Iris (Iris setosa, Iris virginica and Iris versicolor). Four features were measured from each sample: the length and the width of the sepals and petals, in centimeters. 
-Sepal Length
-Sepal Width
-Petal Length
-Petal Width
-Based on the combination of these four features the species of the flower is being determined.
+1. Sepal Length 
+2. Sepal Width 
+3. Petal Length 
+4. Petal Width 
+Based on the combination of these four features the species of the flower is being determined. 
 We have taken the IRIS data set from Kaggle and added the same to github repository.
 
 
