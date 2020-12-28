@@ -14,7 +14,7 @@ The data set consists of 50 samples from each of three species of Iris (Iris set
 1. Sepal Length 
 2. Sepal Width 
 3. Petal Length 
-4. Petal Width 
+4. Petal Width  
 Based on the combination of these four features the species of the flower is being determined. 
 We have taken the IRIS data set from Kaggle and added the same to github repository.
 
