@@ -50,21 +50,79 @@ The dataset is accessed directly from github using Azure's TabularDatasetFactory
 
 
 ### Results
-*TODO*: What are the results you got with your automated ML model? What were the parameters of the model? How could you have improved it?
+# AUTOML RUNDETAILS WIDGET & DIFFERENT MODELS GENERATED 
+<img src="Capstone/pic2.PNG">
 
-*TODO* Remeber to provide screenshots of the `RunDetails` widget as well as a screenshot of the best model trained with it's parameters.
+<img src="Capstone/pic3.PNG">
+
+# BEST TRAINED MODEL - VOTINGENSEMBLE - ACCURACY = 0.9905
+
+<img src="Capstone/pic4.PNG">
+
+<img src="Capstone/pic5.PNG">
+
+### IMPROVEMENT OPPORTUNITIES
+We have achieved maximum accuracy through VotingEnsemble = 0.9905. 
+In AutoML run we can use the allowed_models or blocked_models parameters to further, modify iterations with the available models to include or exclude 
+For classification, we can also enable deep learning. If deep learning is enabled, validation is limited to train_validation split.
 
 ## Hyperparameter Tuning
+The machine learning model I have chosen to go along with hyperdrive is Support Vector Machine (SVM). 
+Linear models have linear decision boundaries (intersecting hyperplanes) while the non-linear kernel models (polynomial or Gaussian RBF) have more flexible non-linear decision boundaries with shapes that depend on the kind of kernel and its parameters. 
+In addition to performing linear classification, SVMs can efficiently perform a non-linear classification using what is called the kernel trick, implicitly mapping their inputs into high-dimensional feature spaces.
+
+# PARAMETERS
+1. RandomParameterSampling - Random sampling supports discrete and continuous hyperparameters. It supports early termination of low-performance runs. 
+### parameter_space
+a) "--kernel": choice('linear', 'rbf', 'poly', 'sigmoid') - If we’re having a problem with an SVM model, it can be useful to run our data through the kernel to see if anything unexpected happens. 
+#### Linear Kernel - Linear kernels compute similarity in the input space. They don’t implicitly define a transformation to higher dimensions. 
+#### RBF Kernel - The RBF feature space has an infinite number of dimensions. We can build complex decision boundaries
+#### Polynomial Kernel - The polynomial kernel allows us to learn patterns in our data as if we had access to the interaction features, which are the features that come from combining pre-existing features
+#### Sigmoid Kernel - SVM model using a sigmoid kernel function is equivalent to a two-layer, perceptron neural network.
+
+b) "--penalty": choice(0.5, 1, 1.5) - It tells the algorithm how much we care about misclassified points.
+2. primary_metric_name='Accuracy - Each training run is evaluated for the primary metric. The early termination policy uses the primary metric to identify low-performance runs. 
+3. primary_metric_goal - It can be either PrimaryMetricGoal.MAXIMIZE or PrimaryMetricGoal.MINIMIZE and determines whether the primary metric will be maximized or minimized when evaluating the runs. 
+4. max_concurrent_runs=4 - Maximum number of runs that can run concurrently. If not specified, all runs launch in parallel. If specified, must be an integer between 1 and 100. 
+5. Specify early termination policy -Automatically terminate poorly performing runs with an early termination policy. Early termination improves computational efficiency. 
+
 *TODO*: What kind of model did you choose for this experiment and why? Give an overview of the types of parameters and their ranges used for the hyperparameter search
 
-
 ### Results
-*TODO*: What are the results you got with your model? What were the parameters of the model? How could you have improved it?
+# HYPERDRIVE RUNDETAILS WIDGET  
+<img src="Capstone/pic6.PNG">
 
-*TODO* Remeber to provide screenshots of the `RunDetails` widget as well as a screenshot of the best model trained with it's parameters.
+# BEST TRAINED MODEL - ACCURACY = 0.9778
+
+<img src="Capstone/pic7.PNG">
+
+
+### IMPROVEMENT OPPORTUNITIES
+
+1. Instead of Random parameter sampling, we could use Grid sampling which would exhaustively search over the search space. Supports early termination of low-performance runs. Performs a simple grid search over all possible values. Grid sampling can, only be used with choice hyperparameters. 
+2. For early termination policy we use Bandit policy, however we could also use additional parameters like slack_amount [The absolute distance allowed from the best performing run] and delay_evaluation [The number of intervals for which to delay the first policy evaluation. If specified, the policy applies every multiple of evaluation_interval that is greater than or equal to delay_evaluation.]. Although these are optional parameters.
+3. The gamma parameter makes most intuitive sense when we think about the RBF (or Gaussian) kernel. The Gaussian class boundaries dissipate as they get further from the support vectors. The gamma parameter determines how quickly this dissipation happens; larger values decrease the effect of any individual support vector.
 
 ## Model Deployment
 *TODO*: Give an overview of the deployed model and instructions on how to query the endpoint with a sample input.
+### Best hyperdrive model has an Accuracy of 0.97778
+### Best AutoML model [VotingEnsemble] has an accuracy of 0.99048
+### Thus we would proceed with the deployment of the VotingEnsemble model
+#### I have registered the best model :
+
+<img src="Capstone/pic8.PNG">
+
+#### Then deployed this model as a web service using ACI (Azure Container Instance). Screenshot shows the Scoring URI and the Swagger link
+
+<img src="Capstone/pic9.PNG">
+
+#### Below is the Screenshot of the Scoring/ Entry Script 
+
+<img src="Capstone/pic11.PNG">
+
+#### Below is the Screenshot showing how we are calling the Web App with sample data and what is the predicted result
+
+<img src="Capstone/pic10.PNG">
 
 ## Screen Recording
 *TODO* Provide a link to a screen recording of the project in action. Remember that the screencast should demonstrate:
@@ -72,5 +130,14 @@ The dataset is accessed directly from github using Azure's TabularDatasetFactory
 - Demo of the deployed  model
 - Demo of a sample request sent to the endpoint and its response
 
-## Standout Suggestions
-*TODO (Optional):* This is where you can provide information about any standout suggestions that you have attempted.
+## Standout Suggestions - OPTIONAL
+### Enable logging in your deployed web app
+#### Below is the Screenshot of the Scoring/ Entry Script 
+
+<img src="Capstone/pic11.PNG">
+#### Details logged and a screenshot of the logs and metrics collected.
+<img src="Capstone/pic12.PNG">
+<img src="Capstone/pic14.PNG">
+
+
+
