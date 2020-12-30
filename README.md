@@ -57,11 +57,11 @@ The dataset is accessed directly from github using Azure's TabularDatasetFactory
 
 <img src="Capstone/pics3.PNG">
 
-### BEST TRAINED MODEL - VOTINGENSEMBLE - ACCURACY = 0.9905
+### BEST TRAINED MODEL - VOTINGENSEMBLE - ACCURACY = 0.9810
 
 <img src="Capstone/pic4.PNG">
 
-<img src="Capstone/pic5.PNG">
+
 
 ### IMPROVEMENT OPPORTUNITIES
 We have achieved maximum accuracy through VotingEnsemble = 0.9905.  
