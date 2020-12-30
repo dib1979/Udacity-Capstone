@@ -57,14 +57,18 @@ The dataset is accessed directly from github using Azure's TabularDatasetFactory
 
 <img src="Capstone/pics3.PNG">
 
-### BEST TRAINED MODEL - VOTINGENSEMBLE - ACCURACY = 0.9810
-
 <img src="Capstone/pic4.PNG">
 
+### BEST TRAINED MODEL - StandardScalerWrapper, Logistic Regression - ACCURACY = 0.9810
 
+<img src="Capstone/new1.PNG">
+
+### Screenshot from GUI shows the best model from the child run
+
+<img src="Capstone/new2.PNG">
 
 ### IMPROVEMENT OPPORTUNITIES
-We have achieved maximum accuracy through VotingEnsemble = 0.9801  
+We have achieved maximum accuracy through StandardScalerWrapper, Logistic Regression = 0.9801  
 1. In AutoML run we can use the allowed_models or blocked_models parameters to further, modify iterations with the available models to include or exclude 
 2. For classification, we can also enable deep learning. If deep learning is enabled, validation is limited to train_validation split.
 
