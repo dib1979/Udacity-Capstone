@@ -130,6 +130,8 @@ b) "--penalty": choice(0.5, 1, 1.5) - It tells the algorithm how much we care ab
 <img src="Capstone/pic10.PNG">
 
 ## Screen Recording
+
+https://youtu.be/LlRXOYKXoxk
 *TODO* Provide a link to a screen recording of the project in action. Remember that the screencast should demonstrate:
 - A working model
 - Demo of the deployed  model
