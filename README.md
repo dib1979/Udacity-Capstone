@@ -126,7 +126,7 @@ b) "--penalty": choice(0.5, 1, 1.5) - It tells the algorithm how much we care ab
 
 #### Then deployed this model as a web service using ACI (Azure Container Instance). Screenshot shows the Scoring URI and the Swagger link
 
-<img src="Capstone/pic9.PNG">
+<img src="Capstone/pic11.PNG">
 
 ### GUI Interface showing that the model has been deployed and it is Healthy & App Insight is enabled
 <img src="Capstone/new5.PNG">
