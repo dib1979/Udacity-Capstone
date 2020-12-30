@@ -135,6 +135,14 @@ b) "--penalty": choice(0.5, 1, 1.5) - It tells the algorithm how much we care ab
 ### GUI interface showing the deployed Model under ENDPOINTS
 <img src="Capstone/new4.PNG">
 
+## FEEDBACK - A file containing the environment details ❗
+### I have incorporated the files in the github repo : https://github.com/dib1979/Udacity-Capstone/tree/main/Capstone1
+
+<img src="Capstone/new11.PNG">
+
+### Also from the best model i have extracted the required files and placed them in the repo - https://github.com/dib1979/Udacity-Capstone/tree/main/Capstone1/AutoML48e391f1b45
+
+
 #### Below is the Screenshot of the Scoring/ Entry Script 
 
 <img src="Capstone/new10.PNG">
