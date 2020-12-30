@@ -64,7 +64,7 @@ The dataset is accessed directly from github using Azure's TabularDatasetFactory
 
 
 ### IMPROVEMENT OPPORTUNITIES
-We have achieved maximum accuracy through VotingEnsemble = 0.9905.  
+We have achieved maximum accuracy through VotingEnsemble = 0.9801  
 1. In AutoML run we can use the allowed_models or blocked_models parameters to further, modify iterations with the available models to include or exclude 
 2. For classification, we can also enable deep learning. If deep learning is enabled, validation is limited to train_validation split.
 
