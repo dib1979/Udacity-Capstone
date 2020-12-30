@@ -122,10 +122,18 @@ b) "--penalty": choice(0.5, 1, 1.5) - It tells the algorithm how much we care ab
 #### I have registered the best model :
 
 <img src="Capstone/pic8.PNG">
+<img src="Capstone/new3.PNG">
 
 #### Then deployed this model as a web service using ACI (Azure Container Instance). Screenshot shows the Scoring URI and the Swagger link
 
 <img src="Capstone/pic9.PNG">
+
+### GUI Interface showing that the model has been deployed and it is Healthy & App Insight is enabled
+<img src="Capstone/new5.PNG">
+<img src="Capstone/new6.PNG">
+
+### GUI interface showing the deployed Model under ENDPOINTS
+<img src="Capstone/new4.PNG">
 
 #### Below is the Screenshot of the Scoring/ Entry Script 
 
@@ -137,11 +145,8 @@ b) "--penalty": choice(0.5, 1, 1.5) - It tells the algorithm how much we care ab
 
 ## Screen Recording
 
-https://youtu.be/LlRXOYKXoxk
-*TODO* Provide a link to a screen recording of the project in action. Remember that the screencast should demonstrate:
-- A working model
-- Demo of the deployed  model
-- Demo of a sample request sent to the endpoint and its response
+### https://youtu.be/LlRXOYKXoxk
+
 
 ## Standout Suggestions - OPTIONAL
 ### Enable logging in your deployed web app
