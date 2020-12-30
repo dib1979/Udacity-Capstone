@@ -68,7 +68,7 @@ The dataset is accessed directly from github using Azure's TabularDatasetFactory
 <img src="Capstone/new2.PNG">
 
 ### IMPROVEMENT OPPORTUNITIES
-We have achieved maximum accuracy through StandardScalerWrapper, Logistic Regression = 0.9801  
+### We have achieved maximum accuracy through StandardScalerWrapper, Logistic Regression = 0.9801  
 1. In AutoML run we can use the allowed_models or blocked_models parameters to further, modify iterations with the available models to include or exclude 
 2. For classification, we can also enable deep learning. If deep learning is enabled, validation is limited to train_validation split.
 
@@ -100,11 +100,13 @@ b) "--penalty": choice(0.5, 1, 1.5) - It tells the algorithm how much we care ab
 ### Results
 # HYPERDRIVE RUNDETAILS WIDGET  
 <img src="Capstone/pic6.PNG">
+<img src="Capstone/new7.PNG">
 
 # BEST TRAINED MODEL - ACCURACY = 0.9778
 
 <img src="Capstone/pic7.PNG">
-
+<img src="Capstone/new8.PNG">
+<img src="Capstone/new9.PNG">
 
 ### IMPROVEMENT OPPORTUNITIES
 
@@ -115,8 +117,8 @@ b) "--penalty": choice(0.5, 1, 1.5) - It tells the algorithm how much we care ab
 ## Model Deployment
 *TODO*: Give an overview of the deployed model and instructions on how to query the endpoint with a sample input.
 ### Best hyperdrive model has an Accuracy of 0.97778
-### Best AutoML model [VotingEnsemble] has an accuracy of 0.99048
-### Thus we would proceed with the deployment of the VotingEnsemble model
+### Best AutoML model [VotingEnsemble] has an accuracy of 0.9810
+### Thus we would proceed with the deployment of the StandardScalerWrapper, Logistic Regression model
 #### I have registered the best model :
 
 <img src="Capstone/pic8.PNG">
