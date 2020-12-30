@@ -55,6 +55,8 @@ The dataset is accessed directly from github using Azure's TabularDatasetFactory
 
 <img src="Capstone/pic3.PNG">
 
+<img src="Capstone/pics3.PNG">
+
 ### BEST TRAINED MODEL - VOTINGENSEMBLE - ACCURACY = 0.9905
 
 <img src="Capstone/pic4.PNG">
