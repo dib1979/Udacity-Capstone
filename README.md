@@ -137,7 +137,7 @@ b) "--penalty": choice(0.5, 1, 1.5) - It tells the algorithm how much we care ab
 
 #### Below is the Screenshot of the Scoring/ Entry Script 
 
-<img src="Capstone/pic11.PNG">
+<img src="Capstone/new10.PNG">
 
 #### Below is the Screenshot showing how we are calling the Web App with sample data and what is the predicted result
 
@@ -152,8 +152,9 @@ b) "--penalty": choice(0.5, 1, 1.5) - It tells the algorithm how much we care ab
 ### Enable logging in your deployed web app
 #### Below is the Screenshot of the Scoring/ Entry Script 
 
-<img src="Capstone/pic11.PNG">
-#### Details logged and a screenshot of the logs and metrics collected.
+<img src="Capstone/new10.PNG">
+####  Details logged and a screenshot of the logs and metrics collected
+
 <img src="Capstone/pic12.PNG">
 <img src="Capstone/pic14.PNG">
 
